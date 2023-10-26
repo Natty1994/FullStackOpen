@@ -1,0 +1,10 @@
+participant browser;
+participant server;
+paticipant javascript from server;
+participant user;
+
+user-->browser- creates note;
+javascript-->server- fetchs data from browser and sends to server;
+browser-->user- displays the new content without requesting another GET request;
+
+/**Sorry for not reading the instruction carefuly this is the same as the ex 0.5*/
